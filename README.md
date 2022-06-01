@@ -43,12 +43,20 @@ Also add paths to the built OpenVINO™ Runtime libraries to the `LD_LIBRARY_PAT
 
 ## Preparing to Run
 
-You will need to download the files for the two models used in this demo and move them into their corresponding folders: 
+You will need to download the model files needed for this demo before you run the code. The list of models is in `/pedestrian_tracker_demo/cpp/models.lst` file.
+This file can be used as a parameter for [Model Downloader](https://github.com/openvinotoolkit/open_model_zoo/blob/master/tools/model_tools/README.md) and Converter to download and, if necessary, convert models to OpenVINO IR format (\*.xml + \*.bin).
 
-For person-detection-retail-0013 get the files [here](https://download.01.org/opencv/2019/open_model_zoo/R1/models_bin/person-detection-retail-0013/) and put them into [this folder](/tools/model_tools/intel/person-detection-retail-0013/).
+An example of using the Model Downloader in the `/pedestrian_tracker_demo/cpp/` folder:
 
-For person-detection-retail-0013 get the files [here](https://download.01.org/opencv/2019/open_model_zoo/R1/models_bin/person-reidentification-retail-0277/) and put them into [this folder](/tools/model_tools/intel/person-reidentification-retail-0277/).
+```sh
+omz_downloader --list models.lst
+```
 
+An example of using the Model Converter:
+
+```sh
+omz_converter --list models.lst
+```
 
 To run the demo applications, you can use images and videos from the media files collection available at [https://github.com/intel-iot-devkit/sample-videos](https://github.com/intel-iot-devkit/sample-videos).
 
