@@ -45,6 +45,10 @@ Also add paths to the built OpenVINO™ Runtime libraries to the `LD_LIBRARY_PAT
 
 ## Preparing to Run
 
+You will need to download the files for the two models used in this demo and move them into their corresponding folders. 
+For person-detection-retail-0013 get the files [here](https://download.01.org/opencv/2019/open_model_zoo/R1/models_bin/person-detection-retail-0013/) and put them into [this folder](/tools/model_tools/intel/person-detection-retail-0013/).
+For person-detection-retail-0013 get the files [here](https://download.01.org/opencv/2019/open_model_zoo/R1/models_bin/person-reidentification-retail-0277/) and put them into [this folder](/tools/model_tools/intel/person-reidentification-retail-0277/).
+
 To run the demo applications, you can use images and videos from the media files collection available at [https://github.com/intel-iot-devkit/sample-videos](https://github.com/intel-iot-devkit/sample-videos).
 
 >**NOTE**: If you provide a single image as an input, the demo processes and renders it quickly, then exits. To continuously visualize inference results on the screen, apply the `loop` option, which enforces processing a single image in a loop.
