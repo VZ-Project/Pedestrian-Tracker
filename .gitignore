@@ -2,3 +2,4 @@
 *.onnx
 *.pyc
 *.log
+intel
