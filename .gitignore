@@ -1,7 +1,4 @@
 *.bin
-*.xml
-person-reidentification-retail-0277
-person-detection-retail-0013
 *.onnx
 *.pyc
 *.log
