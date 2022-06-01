@@ -43,7 +43,7 @@ Also add paths to the built OpenVINO™ Runtime libraries to the `LD_LIBRARY_PAT
 
 ## Preparing to Run
 
-You will need to download the files for the two models used in this demo and move them into their corresponding folders:
+You will need to download the files for the two models used in this demo and move them into their corresponding folders: 
 
 For person-detection-retail-0013 get the files [here](https://download.01.org/opencv/2019/open_model_zoo/R1/models_bin/person-detection-retail-0013/) and put them into [this folder](/tools/model_tools/intel/person-detection-retail-0013/).
 
