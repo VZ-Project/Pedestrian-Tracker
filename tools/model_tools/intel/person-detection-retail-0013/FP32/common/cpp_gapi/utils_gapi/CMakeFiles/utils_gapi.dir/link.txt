@@ -1,0 +1,2 @@
+/usr/bin/ar qc ../../../intel64/Release/libutils_gapi.a CMakeFiles/utils_gapi.dir/src/stream_source.cpp.o
+/usr/bin/ranlib ../../../intel64/Release/libutils_gapi.a
