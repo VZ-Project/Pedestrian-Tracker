@@ -53,8 +53,8 @@ struct Initialize
 {
 
     // std::string i = "/home/hello-robot/vz_modules/hse_ws/src/Human-State-Estimation/multi-angle-near-wall_pE8qpWQR.mp4"; // input directory
-    std::string det_model = "/home/hello-robot/Robot_Autonomous_Navigation/catkin_ws/src/stretch_ros/vz_human_state_estimation/tools/model_tools/intel/person-detection-retail-0013/FP32/person-detection-retail-0013.xml";
-    std::string reid_model = "/home/hello-robot/Robot_Autonomous_Navigation/catkin_ws/src/stretch_ros/vz_human_state_estimation/tools/model_tools/intel/person-reidentification-retail-0277/FP32/person-reidentification-retail-0277.xml";
+    std::string det_model = std::strcat(getenv("PATH_TO_MODULES"), "/Human-State-Estimation/Pedestrian-Tracker/pedestrian_tracker_demo/cpp/intel/person-detection-retail-0013/FP32/person-detection-retail-0013.xml");
+    std::string reid_model = std::strcat(getenv("PATH_TO_MODULES"), "/Human-State-Estimation/Pedestrian-Tracker/pedestrian_tracker_demo/cpp/intel/person-reidentification-retail-0277/FP32/person-reidentification-retail-0277.xml");
     // std::string detlog_out = "/home/hello-robot/vz_modules/hse_ws/src/Human-State-Estimation/output_NEU.mp4";
     std::string at = "ssd";
 

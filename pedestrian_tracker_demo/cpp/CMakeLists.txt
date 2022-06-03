@@ -6,7 +6,9 @@ file(GLOB_RECURSE SOURCES ${CMAKE_CURRENT_SOURCE_DIR}/*.cpp ../${CMAKE_CURRENT_S
 file(GLOB_RECURSE HEADERS ${CMAKE_CURRENT_SOURCE_DIR}/*.hpp ../${CMAKE_CURRENT_SOURCE_DIR}/*.hpp)
 
 
-
+# add_subdirectory($ENV{PATH_TO_MODULES}/Human-State-Estimation/Pedestrian-Tracker/thirdparty/gflags)
+# add_subdirectory($ENV{PATH_TO_MODULES}/Human-State-Estimation/Pedestrian-Tracker/common/cpp)
+# add_subdirectory($ENV{PATH_TO_MODULES}/Human-State-Estimation/Pedestrian-Tracker/common/cpp_gapi)
 
 add_demo(NAME pedestrian_tracker_demo
     SOURCES ${SOURCES}
